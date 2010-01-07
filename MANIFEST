@@ -1,0 +1,15 @@
+Build.PL
+Changes
+LICENSE
+MANIFEST
+META.yml
+README
+dist.ini
+lib/Task/Dist/Zilla.pm
+scripts/update_pkg_list
+t/00-compile.t
+t/author-critic.t
+t/release-meta-yaml.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t
+t/task-bogus.t

@@ -1,0 +1,31 @@
+---
+abstract: 'task to install dist-zilla and all its plugins'
+author:
+  - 'Jerome Quelin'
+build_requires:
+  Module::Build: 0.35
+configure_requires:
+  Module::Build: 0.35
+generated_by: 'Dist::Zilla version 1.093400'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Task-Dist-Zilla
+provides:
+  Task::Dist::Zilla:
+    file: lib/Task/Dist/Zilla.pm
+    version: 1.100070
+requires:
+  DB_File: 0
+  English: 0
+  File::Find: 0
+  List::MoreUtils: 0
+  Module::Build: 0
+  Test::More: 0
+  perl: 5.008
+resources:
+  MailingList: http://www.listbox.com/subscribe/?list_id=139292
+  homepage: http://search.cpan.org/dist/Task-Dist-Zilla
+  repository: http://github.com/jquelin/task-dist-zilla
+version: 1.100070
