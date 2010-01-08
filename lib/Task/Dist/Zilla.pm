@@ -11,14 +11,10 @@ use strict;
 use warnings;
 
 package Task::Dist::Zilla;
-our $VERSION = '1.100070';
+our $VERSION = '1.100080';
 # ABSTRACT: task to install dist-zilla and all its plugins
 
 1;
-
-
-
-
 
 
 =pod
@@ -29,7 +25,7 @@ Task::Dist::Zilla - task to install dist-zilla and all its plugins
 
 =head1 VERSION
 
-version 1.100070
+version 1.100080
 
 =head1 SYNOPSIS
 
@@ -176,14 +172,6 @@ in one go.
 
 =head3 Dist::Zilla::PluginBundle::RJBS
 
-=head1 NAME
-
-Task::Dist::Zilla - task to install dist-zilla and all its plugins
-
-=head1 VERSION
-
-version 1.100070
-
 =head1 SEE ALSO
 
 You can find more information on this module at:
@@ -215,17 +203,6 @@ L<http://annocpan.org/dist/Task-Dist-Zilla>
 L<http://cpanratings.perl.org/d/Task-Dist-Zilla>
 
 =back
-
-=head1 AUTHOR
-
-  Jerome Quelin
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2010 by Jerome Quelin.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =head1 AUTHOR
 
