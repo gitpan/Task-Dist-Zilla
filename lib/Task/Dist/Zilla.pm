@@ -11,7 +11,7 @@ use strict;
 use warnings;
 
 package Task::Dist::Zilla;
-our $VERSION = '1.100080';
+our $VERSION = '1.100680';
 # ABSTRACT: task to install dist-zilla and all its plugins
 
 1;
@@ -25,7 +25,7 @@ Task::Dist::Zilla - task to install dist-zilla and all its plugins
 
 =head1 VERSION
 
-version 1.100080
+version 1.100680
 
 =head1 SYNOPSIS
 
@@ -45,6 +45,8 @@ in one go.
 =head2 Plugins
 
 =head3 Dist::Zilla::Plugin::AllFiles
+
+=head3 Dist::Zilla::Plugin::ArchiveRelease
 
 =head3 Dist::Zilla::Plugin::AutoPrereq
 
@@ -76,6 +78,8 @@ in one go.
 
 =head3 Dist::Zilla::Plugin::Git::Tag
 
+=head3 Dist::Zilla::Plugin::GitVersionCheckCJM
+
 =head3 Dist::Zilla::Plugin::InlineFiles
 
 =head3 Dist::Zilla::Plugin::InstallDirs
@@ -95,6 +99,8 @@ in one go.
 =head3 Dist::Zilla::Plugin::MatchManifest
 
 =head3 Dist::Zilla::Plugin::MetaJSON
+
+=head3 Dist::Zilla::Plugin::MetaNoIndex
 
 =head3 Dist::Zilla::Plugin::MetaProvides
 
@@ -147,6 +153,8 @@ in one go.
 =head3 Dist::Zilla::Plugin::ReadmeFromPod
 
 =head3 Dist::Zilla::Plugin::Repository
+
+=head3 Dist::Zilla::Plugin::Signature
 
 =head3 Dist::Zilla::Plugin::TaskWeaver
 
@@ -219,3 +227,4 @@ the same terms as the Perl 5 programming language system itself.
 
 
 __END__
+

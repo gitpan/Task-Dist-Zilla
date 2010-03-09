@@ -2,11 +2,9 @@
 abstract: 'task to install dist-zilla and all its plugins'
 author:
   - 'Jerome Quelin'
-build_requires:
-  Module::Build: 0.35
-configure_requires:
-  Module::Build: 0.35
-generated_by: 'Dist::Zilla version 1.093400'
+build_requires: {}
+configure_requires: {}
+generated_by: 'Dist::Zilla version 1.100660'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,17 +13,85 @@ name: Task-Dist-Zilla
 provides:
   Task::Dist::Zilla:
     file: lib/Task/Dist/Zilla.pm
-    version: 1.100080
+    version: 1.100680
 requires:
   DB_File: 0
+  Dist::Zilla: 0
+  Dist::Zilla::Plugin::AllFiles: 0
+  Dist::Zilla::Plugin::ArchiveRelease: 0
+  Dist::Zilla::Plugin::AutoPrereq: 0
+  Dist::Zilla::Plugin::AutoVersion: 0
+  Dist::Zilla::Plugin::AutoVersion::Relative: 0
+  Dist::Zilla::Plugin::BumpVersion: 0
+  Dist::Zilla::Plugin::CheckChangeLog: 0
+  Dist::Zilla::Plugin::CompileTests: 0
+  Dist::Zilla::Plugin::CopyTo: 0
+  Dist::Zilla::Plugin::CriticTests: 0
+  Dist::Zilla::Plugin::ExtraTests: 0
+  Dist::Zilla::Plugin::FakeRelease: 0
+  Dist::Zilla::Plugin::Git: 0
+  Dist::Zilla::Plugin::Git::Check: 0
+  Dist::Zilla::Plugin::Git::Commit: 0
+  Dist::Zilla::Plugin::Git::Push: 0
+  Dist::Zilla::Plugin::Git::Tag: 0
+  Dist::Zilla::Plugin::GitVersionCheckCJM: 0
+  Dist::Zilla::Plugin::InlineFiles: 0
+  Dist::Zilla::Plugin::InstallDirs: 0
+  Dist::Zilla::Plugin::License: 0
+  Dist::Zilla::Plugin::MakeMaker: 0
+  Dist::Zilla::Plugin::MakeMaker::SkipInstall: 0
+  Dist::Zilla::Plugin::MakeMaker::Test: 0
+  Dist::Zilla::Plugin::Manifest: 0
+  Dist::Zilla::Plugin::ManifestSkip: 0
+  Dist::Zilla::Plugin::MatchManifest: 0
+  Dist::Zilla::Plugin::MetaJSON: 0
+  Dist::Zilla::Plugin::MetaNoIndex: 0
+  Dist::Zilla::Plugin::MetaProvides: 0
+  Dist::Zilla::Plugin::MetaProvides::Class: 0
+  Dist::Zilla::Plugin::MetaProvides::FromFile: 0
+  Dist::Zilla::Plugin::MetaProvides::Package: 0
+  Dist::Zilla::Plugin::MetaRecommends: 0
+  Dist::Zilla::Plugin::MetaResources: 0
+  Dist::Zilla::Plugin::MetaTests: 0
+  Dist::Zilla::Plugin::MetaYAML: 0
+  Dist::Zilla::Plugin::ModuleBuild: 0
+  Dist::Zilla::Plugin::ModuleBuild::Test: 0
+  Dist::Zilla::Plugin::ModuleInstall: 0
+  Dist::Zilla::Plugin::NextRelease: 0
+  Dist::Zilla::Plugin::PerlTidy: 0
+  Dist::Zilla::Plugin::PkgVersion: 0
+  Dist::Zilla::Plugin::PodLoom: 0
+  Dist::Zilla::Plugin::PodPurler: 0
+  Dist::Zilla::Plugin::PodTests: 0
+  Dist::Zilla::Plugin::PodVersion: 0
+  Dist::Zilla::Plugin::PodWeaver: 0
+  Dist::Zilla::Plugin::Prepender: 0
+  Dist::Zilla::Plugin::Prereq: 0
+  Dist::Zilla::Plugin::PruneCruft: 0
+  Dist::Zilla::Plugin::PruneFiles: 0
+  Dist::Zilla::Plugin::Readme: 0
+  Dist::Zilla::Plugin::ReadmeFromPod: 0
+  Dist::Zilla::Plugin::Repository: 0
+  Dist::Zilla::Plugin::Signature: 0
+  Dist::Zilla::Plugin::TaskWeaver: 0
+  Dist::Zilla::Plugin::TemplateCJM: 0
+  Dist::Zilla::Plugin::UploadToCPAN: 0
+  Dist::Zilla::Plugin::VersionFromModule: 0
+  Dist::Zilla::PluginBundle::CJM: 0
+  Dist::Zilla::PluginBundle::Classic: 0
+  Dist::Zilla::PluginBundle::FAYLAND: 0
+  Dist::Zilla::PluginBundle::Filter: 0
+  Dist::Zilla::PluginBundle::Git: 0
+  Dist::Zilla::PluginBundle::JQUELIN: 0
+  Dist::Zilla::PluginBundle::RJBS: 0
   English: 0
   File::Find: 0
+  File::Temp: 0
   List::MoreUtils: 0
-  Module::Build: 0
   Test::More: 0
   perl: 5.008
 resources:
   MailingList: http://www.listbox.com/subscribe/?list_id=139292
   homepage: http://search.cpan.org/dist/Task-Dist-Zilla
   repository: http://github.com/jquelin/task-dist-zilla
-version: 1.100080
+version: 1.100680
