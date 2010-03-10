@@ -34,7 +34,6 @@ my %module_build_args = (
                                        'Dist::Zilla::Plugin::MatchManifest' => '0',
                                        'File::Find' => '0',
                                        'Dist::Zilla::Plugin::CopyTo' => '0',
-                                       'Dist::Zilla::Plugin::MakeMaker::Test' => '0',
                                        'Dist::Zilla::Plugin::InstallDirs' => '0',
                                        'Dist::Zilla::Plugin::MetaProvides' => '0',
                                        'Dist::Zilla::Plugin::ExtraTests' => '0',
@@ -44,13 +43,13 @@ my %module_build_args = (
                                        'perl' => '5.008',
                                        'Dist::Zilla::PluginBundle::FAYLAND' => '0',
                                        'Dist::Zilla::Plugin::PruneCruft' => '0',
-                                       'Dist::Zilla::Plugin::PruneFiles' => '0',
                                        'Dist::Zilla::PluginBundle::Git' => '0',
+                                       'Dist::Zilla::Plugin::PruneFiles' => '0',
                                        'Dist::Zilla::Plugin::MetaProvides::Package' => '0',
                                        'Dist::Zilla::Plugin::ModuleBuild' => '0',
                                        'Dist::Zilla::Plugin::MetaProvides::Class' => '0',
-                                       'Dist::Zilla::PluginBundle::Filter' => '0',
                                        'Dist::Zilla::Plugin::AllFiles' => '0',
+                                       'Dist::Zilla::PluginBundle::Filter' => '0',
                                        'Dist::Zilla::Plugin::GitVersionCheckCJM' => '0',
                                        'Dist::Zilla::Plugin::MetaResources' => '0',
                                        'Dist::Zilla::Plugin::AutoVersion::Relative' => '0',
@@ -72,7 +71,6 @@ my %module_build_args = (
                                        'Dist::Zilla::Plugin::MetaYAML' => '0',
                                        'Dist::Zilla::Plugin::Readme' => '0',
                                        'Dist::Zilla::Plugin::Git::Push' => '0',
-                                       'Dist::Zilla::Plugin::ModuleBuild::Test' => '0',
                                        'Dist::Zilla::Plugin::ReadmeFromPod' => '0',
                                        'Dist::Zilla::PluginBundle::JQUELIN' => '0',
                                        'Dist::Zilla::Plugin::MetaNoIndex' => '0',
@@ -92,7 +90,7 @@ my %module_build_args = (
                                        'Dist::Zilla::Plugin::MetaTests' => '0'
                                      },
                        'configure_requires' => {},
-                       'dist_version' => '1.100680'
+                       'dist_version' => '1.100690'
                      );
 
 

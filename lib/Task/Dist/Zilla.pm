@@ -11,7 +11,7 @@ use strict;
 use warnings;
 
 package Task::Dist::Zilla;
-our $VERSION = '1.100680';
+our $VERSION = '1.100690';
 # ABSTRACT: task to install dist-zilla and all its plugins
 
 1;
@@ -25,7 +25,7 @@ Task::Dist::Zilla - task to install dist-zilla and all its plugins
 
 =head1 VERSION
 
-version 1.100680
+version 1.100690
 
 =head1 SYNOPSIS
 
@@ -90,8 +90,6 @@ in one go.
 
 =head3 Dist::Zilla::Plugin::MakeMaker::SkipInstall
 
-=head3 Dist::Zilla::Plugin::MakeMaker::Test
-
 =head3 Dist::Zilla::Plugin::Manifest
 
 =head3 Dist::Zilla::Plugin::ManifestSkip
@@ -119,8 +117,6 @@ in one go.
 =head3 Dist::Zilla::Plugin::MetaYAML
 
 =head3 Dist::Zilla::Plugin::ModuleBuild
-
-=head3 Dist::Zilla::Plugin::ModuleBuild::Test
 
 =head3 Dist::Zilla::Plugin::ModuleInstall
 
