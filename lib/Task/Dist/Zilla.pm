@@ -11,7 +11,7 @@ use strict;
 use warnings;
 
 package Task::Dist::Zilla;
-our $VERSION = '1.100690';
+$Task::Dist::Zilla::VERSION = '1.100900';
 # ABSTRACT: task to install dist-zilla and all its plugins
 
 1;
@@ -25,7 +25,7 @@ Task::Dist::Zilla - task to install dist-zilla and all its plugins
 
 =head1 VERSION
 
-version 1.100690
+version 1.100900
 
 =head1 SYNOPSIS
 
@@ -44,8 +44,6 @@ in one go.
 
 =head2 Plugins
 
-=head3 Dist::Zilla::Plugin::AllFiles
-
 =head3 Dist::Zilla::Plugin::ArchiveRelease
 
 =head3 Dist::Zilla::Plugin::AutoPrereq
@@ -54,19 +52,39 @@ in one go.
 
 =head3 Dist::Zilla::Plugin::AutoVersion::Relative
 
+=head3 Dist::Zilla::Plugin::Bugtracker
+
 =head3 Dist::Zilla::Plugin::BumpVersion
+
+=head3 Dist::Zilla::Plugin::BumpVersionFromGit
 
 =head3 Dist::Zilla::Plugin::CheckChangeLog
 
+=head3 Dist::Zilla::Plugin::CheckChangesTests
+
+=head3 Dist::Zilla::Plugin::CheckExtraTests
+
 =head3 Dist::Zilla::Plugin::CompileTests
+
+=head3 Dist::Zilla::Plugin::ConfirmRelease
 
 =head3 Dist::Zilla::Plugin::CopyTo
 
 =head3 Dist::Zilla::Plugin::CriticTests
 
+=head3 Dist::Zilla::Plugin::DistManifestTests
+
+=head3 Dist::Zilla::Plugin::ExecDir
+
 =head3 Dist::Zilla::Plugin::ExtraTests
 
 =head3 Dist::Zilla::Plugin::FakeRelease
+
+=head3 Dist::Zilla::Plugin::FatPacker
+
+=head3 Dist::Zilla::Plugin::FinderCode
+
+=head3 Dist::Zilla::Plugin::GatherDir
 
 =head3 Dist::Zilla::Plugin::Git
 
@@ -80,9 +98,15 @@ in one go.
 
 =head3 Dist::Zilla::Plugin::GitVersionCheckCJM
 
+=head3 Dist::Zilla::Plugin::HasVersionTests
+
+=head3 Dist::Zilla::Plugin::Homepage
+
 =head3 Dist::Zilla::Plugin::InlineFiles
 
-=head3 Dist::Zilla::Plugin::InstallDirs
+=head3 Dist::Zilla::Plugin::InstallGuide
+
+=head3 Dist::Zilla::Plugin::KwaliteeTests
 
 =head3 Dist::Zilla::Plugin::License
 
@@ -95,6 +119,8 @@ in one go.
 =head3 Dist::Zilla::Plugin::ManifestSkip
 
 =head3 Dist::Zilla::Plugin::MatchManifest
+
+=head3 Dist::Zilla::Plugin::MetaConfig
 
 =head3 Dist::Zilla::Plugin::MetaJSON
 
@@ -116,25 +142,37 @@ in one go.
 
 =head3 Dist::Zilla::Plugin::MetaYAML
 
+=head3 Dist::Zilla::Plugin::MinimumVersionTests
+
 =head3 Dist::Zilla::Plugin::ModuleBuild
+
+=head3 Dist::Zilla::Plugin::ModuleBuild::Custom
 
 =head3 Dist::Zilla::Plugin::ModuleInstall
 
 =head3 Dist::Zilla::Plugin::NextRelease
 
+=head3 Dist::Zilla::Plugin::OverridableMakeMaker
+
 =head3 Dist::Zilla::Plugin::PerlTidy
 
 =head3 Dist::Zilla::Plugin::PkgVersion
+
+=head3 Dist::Zilla::Plugin::PodCoverageTests
 
 =head3 Dist::Zilla::Plugin::PodLoom
 
 =head3 Dist::Zilla::Plugin::PodPurler
 
-=head3 Dist::Zilla::Plugin::PodTests
+=head3 Dist::Zilla::Plugin::PodSpellingTests
+
+=head3 Dist::Zilla::Plugin::PodSyntaxTests
 
 =head3 Dist::Zilla::Plugin::PodVersion
 
 =head3 Dist::Zilla::Plugin::PodWeaver
+
+=head3 Dist::Zilla::Plugin::PortabilityTests
 
 =head3 Dist::Zilla::Plugin::Prepender
 
@@ -146,25 +184,43 @@ in one go.
 
 =head3 Dist::Zilla::Plugin::Readme
 
-=head3 Dist::Zilla::Plugin::ReadmeFromPod
+=head3 Dist::Zilla::Plugin::ReadmeMarkdownFromPod
+
+=head3 Dist::Zilla::Plugin::ReportVersions
 
 =head3 Dist::Zilla::Plugin::Repository
 
+=head3 Dist::Zilla::Plugin::ShareDir
+
 =head3 Dist::Zilla::Plugin::Signature
+
+=head3 Dist::Zilla::Plugin::SynopsisTests
 
 =head3 Dist::Zilla::Plugin::TaskWeaver
 
 =head3 Dist::Zilla::Plugin::TemplateCJM
 
+=head3 Dist::Zilla::Plugin::UnusedVarsTests
+
 =head3 Dist::Zilla::Plugin::UploadToCPAN
 
 =head3 Dist::Zilla::Plugin::VersionFromModule
 
+=head3 Dist::Zilla::Plugin::VersionFromPrev
+
+=head3 Dist::Zilla::Plugin::VersionFromPrev::Finder::Git::LastVersion
+
+=head3 Dist::Zilla::Plugin::VersionFromPrev::Style::Classic
+
 =head2 Plugin bundles
+
+=head3 Dist::Zilla::PluginBundle::AVAR
 
 =head3 Dist::Zilla::PluginBundle::CJM
 
 =head3 Dist::Zilla::PluginBundle::Classic
+
+=head3 Dist::Zilla::PluginBundle::FakeClassic
 
 =head3 Dist::Zilla::PluginBundle::FAYLAND
 
@@ -173,6 +229,10 @@ in one go.
 =head3 Dist::Zilla::PluginBundle::Git
 
 =head3 Dist::Zilla::PluginBundle::JQUELIN
+
+=head3 Dist::Zilla::PluginBundle::MARCEL
+
+=head3 Dist::Zilla::PluginBundle::PDONELAN
 
 =head3 Dist::Zilla::PluginBundle::RJBS
 
