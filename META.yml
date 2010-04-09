@@ -10,7 +10,7 @@ build_requires:
   Test::More: 0
 configure_requires:
   Module::Build: 0.3601
-generated_by: 'Dist::Zilla version 2.100880'
+generated_by: 'Dist::Zilla version 2.100960'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -19,9 +19,11 @@ name: Task-Dist-Zilla
 provides:
   Task::Dist::Zilla:
     file: lib/Task/Dist/Zilla.pm
-    version: 1.100900
+    version: 1.100990
+recommends: {}
 requires:
   Dist::Zilla: 0
+  Dist::Zilla::Plugin::ApacheTest: 0
   Dist::Zilla::Plugin::ArchiveRelease: 0
   Dist::Zilla::Plugin::AutoPrereq: 0
   Dist::Zilla::Plugin::AutoVersion: 0
@@ -54,7 +56,9 @@ requires:
   Dist::Zilla::Plugin::InlineFiles: 0
   Dist::Zilla::Plugin::InstallGuide: 0
   Dist::Zilla::Plugin::KwaliteeTests: 0
+  Dist::Zilla::Plugin::LatestPrereqs: 0
   Dist::Zilla::Plugin::License: 0
+  Dist::Zilla::Plugin::LocaleMsgfmt: 0
   Dist::Zilla::Plugin::MakeMaker: 0
   Dist::Zilla::Plugin::MakeMaker::SkipInstall: 0
   Dist::Zilla::Plugin::Manifest: 0
@@ -76,7 +80,6 @@ requires:
   Dist::Zilla::Plugin::ModuleBuild::Custom: 0
   Dist::Zilla::Plugin::ModuleInstall: 0
   Dist::Zilla::Plugin::NextRelease: 0
-  Dist::Zilla::Plugin::OverridableMakeMaker: 0
   Dist::Zilla::Plugin::PerlTidy: 0
   Dist::Zilla::Plugin::PkgVersion: 0
   Dist::Zilla::Plugin::PodCoverageTests: 0
@@ -100,13 +103,14 @@ requires:
   Dist::Zilla::Plugin::SynopsisTests: 0
   Dist::Zilla::Plugin::TaskWeaver: 0
   Dist::Zilla::Plugin::TemplateCJM: 0
+  Dist::Zilla::Plugin::TestRelease: 0
   Dist::Zilla::Plugin::UnusedVarsTests: 0
   Dist::Zilla::Plugin::UploadToCPAN: 0
   Dist::Zilla::Plugin::VersionFromModule: 0
   Dist::Zilla::Plugin::VersionFromPrev: 0
   Dist::Zilla::Plugin::VersionFromPrev::Finder::Git::LastVersion: 0
   Dist::Zilla::Plugin::VersionFromPrev::Style::Classic: 0
-  Dist::Zilla::PluginBundle::AVAR: 0
+  Dist::Zilla::PluginBundle::Basic: 0
   Dist::Zilla::PluginBundle::CJM: 0
   Dist::Zilla::PluginBundle::Classic: 0
   Dist::Zilla::PluginBundle::FAYLAND: 0
@@ -122,4 +126,4 @@ resources:
   MailingList: http://www.listbox.com/subscribe/?list_id=139292
   homepage: http://search.cpan.org/dist/Task-Dist-Zilla
   repository: http://github.com/jquelin/task-dist-zilla
-version: 1.100900
+version: 1.100990

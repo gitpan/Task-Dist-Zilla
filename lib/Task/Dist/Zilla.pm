@@ -11,7 +11,9 @@ use strict;
 use warnings;
 
 package Task::Dist::Zilla;
-$Task::Dist::Zilla::VERSION = '1.100900';
+BEGIN {
+  $Task::Dist::Zilla::VERSION = '1.100990';
+}
 # ABSTRACT: task to install dist-zilla and all its plugins
 
 1;
@@ -25,7 +27,7 @@ Task::Dist::Zilla - task to install dist-zilla and all its plugins
 
 =head1 VERSION
 
-version 1.100900
+version 1.100990
 
 =head1 SYNOPSIS
 
@@ -43,6 +45,8 @@ in one go.
 =head3 Dist::Zilla
 
 =head2 Plugins
+
+=head3 Dist::Zilla::Plugin::ApacheTest
 
 =head3 Dist::Zilla::Plugin::ArchiveRelease
 
@@ -108,7 +112,11 @@ in one go.
 
 =head3 Dist::Zilla::Plugin::KwaliteeTests
 
+=head3 Dist::Zilla::Plugin::LatestPrereqs
+
 =head3 Dist::Zilla::Plugin::License
+
+=head3 Dist::Zilla::Plugin::LocaleMsgfmt
 
 =head3 Dist::Zilla::Plugin::MakeMaker
 
@@ -151,8 +159,6 @@ in one go.
 =head3 Dist::Zilla::Plugin::ModuleInstall
 
 =head3 Dist::Zilla::Plugin::NextRelease
-
-=head3 Dist::Zilla::Plugin::OverridableMakeMaker
 
 =head3 Dist::Zilla::Plugin::PerlTidy
 
@@ -200,6 +206,8 @@ in one go.
 
 =head3 Dist::Zilla::Plugin::TemplateCJM
 
+=head3 Dist::Zilla::Plugin::TestRelease
+
 =head3 Dist::Zilla::Plugin::UnusedVarsTests
 
 =head3 Dist::Zilla::Plugin::UploadToCPAN
@@ -214,7 +222,7 @@ in one go.
 
 =head2 Plugin bundles
 
-=head3 Dist::Zilla::PluginBundle::AVAR
+=head3 Dist::Zilla::PluginBundle::Basic
 
 =head3 Dist::Zilla::PluginBundle::CJM
 
