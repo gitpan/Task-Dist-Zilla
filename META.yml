@@ -19,7 +19,7 @@ name: Task-Dist-Zilla
 provides:
   Task::Dist::Zilla:
     file: lib/Task/Dist/Zilla.pm
-    version: 1.100990
+    version: 1.100991
 recommends: {}
 requires:
   Dist::Zilla: 0
@@ -54,12 +54,14 @@ requires:
   Dist::Zilla::Plugin::HasVersionTests: 0
   Dist::Zilla::Plugin::Homepage: 0
   Dist::Zilla::Plugin::InlineFiles: 0
+  Dist::Zilla::Plugin::InlineFilesMARCEL: 0
   Dist::Zilla::Plugin::InstallGuide: 0
   Dist::Zilla::Plugin::KwaliteeTests: 0
   Dist::Zilla::Plugin::LatestPrereqs: 0
   Dist::Zilla::Plugin::License: 0
   Dist::Zilla::Plugin::LocaleMsgfmt: 0
   Dist::Zilla::Plugin::MakeMaker: 0
+  Dist::Zilla::Plugin::MakeMaker::Awesome: 0
   Dist::Zilla::Plugin::MakeMaker::SkipInstall: 0
   Dist::Zilla::Plugin::Manifest: 0
   Dist::Zilla::Plugin::ManifestSkip: 0
@@ -110,6 +112,7 @@ requires:
   Dist::Zilla::Plugin::VersionFromPrev: 0
   Dist::Zilla::Plugin::VersionFromPrev::Finder::Git::LastVersion: 0
   Dist::Zilla::Plugin::VersionFromPrev::Style::Classic: 0
+  Dist::Zilla::PluginBundle::AVAR: 0
   Dist::Zilla::PluginBundle::Basic: 0
   Dist::Zilla::PluginBundle::CJM: 0
   Dist::Zilla::PluginBundle::Classic: 0
@@ -126,4 +129,4 @@ resources:
   MailingList: http://www.listbox.com/subscribe/?list_id=139292
   homepage: http://search.cpan.org/dist/Task-Dist-Zilla
   repository: http://github.com/jquelin/task-dist-zilla
-version: 1.100990
+version: 1.100991

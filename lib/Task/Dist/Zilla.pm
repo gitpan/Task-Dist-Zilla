@@ -12,7 +12,7 @@ use warnings;
 
 package Task::Dist::Zilla;
 BEGIN {
-  $Task::Dist::Zilla::VERSION = '1.100990';
+  $Task::Dist::Zilla::VERSION = '1.100991';
 }
 # ABSTRACT: task to install dist-zilla and all its plugins
 
@@ -27,7 +27,7 @@ Task::Dist::Zilla - task to install dist-zilla and all its plugins
 
 =head1 VERSION
 
-version 1.100990
+version 1.100991
 
 =head1 SYNOPSIS
 
@@ -108,6 +108,8 @@ in one go.
 
 =head3 Dist::Zilla::Plugin::InlineFiles
 
+=head3 Dist::Zilla::Plugin::InlineFilesMARCEL
+
 =head3 Dist::Zilla::Plugin::InstallGuide
 
 =head3 Dist::Zilla::Plugin::KwaliteeTests
@@ -119,6 +121,8 @@ in one go.
 =head3 Dist::Zilla::Plugin::LocaleMsgfmt
 
 =head3 Dist::Zilla::Plugin::MakeMaker
+
+=head3 Dist::Zilla::Plugin::MakeMaker::Awesome
 
 =head3 Dist::Zilla::Plugin::MakeMaker::SkipInstall
 
@@ -221,6 +225,8 @@ in one go.
 =head3 Dist::Zilla::Plugin::VersionFromPrev::Style::Classic
 
 =head2 Plugin bundles
+
+=head3 Dist::Zilla::PluginBundle::AVAR
 
 =head3 Dist::Zilla::PluginBundle::Basic
 
