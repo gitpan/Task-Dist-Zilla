@@ -12,7 +12,7 @@ use warnings;
 
 package Task::Dist::Zilla;
 BEGIN {
-  $Task::Dist::Zilla::VERSION = '1.102470';
+  $Task::Dist::Zilla::VERSION = '1.110760';
 }
 # ABSTRACT: task to install dist-zilla and all its plugins
 
@@ -27,7 +27,7 @@ Task::Dist::Zilla - task to install dist-zilla and all its plugins
 
 =head1 VERSION
 
-version 1.102470
+version 1.110760
 
 =head1 SYNOPSIS
 
@@ -48,23 +48,33 @@ in one go.
 
 =head3 L<Dist::Zilla::Plugin::ApacheTest>
 
+=head3 L<Dist::Zilla::Plugin::ApocalypseTests>
+
+=head3 L<Dist::Zilla::Plugin::AppendExternalData>
+
 =head3 L<Dist::Zilla::Plugin::ArchiveRelease>
 
 =head3 L<Dist::Zilla::Plugin::AssertOS>
 
 =head3 L<Dist::Zilla::Plugin::Author::KENTNL::DistINI>
 
+=head3 L<Dist::Zilla::Plugin::Authority>
+
+=head3 L<Dist::Zilla::Plugin::AutoMetaResources>
+
 =head3 L<Dist::Zilla::Plugin::AutoVersion::Relative>
+
+=head3 L<Dist::Zilla::Plugin::BeJROCKWAY>
 
 =head3 L<Dist::Zilla::Plugin::Bootstrap::lib>
 
 =head3 L<Dist::Zilla::Plugin::Bugtracker>
 
+=head3 L<Dist::Zilla::Plugin::BuildFile>
+
 =head3 L<Dist::Zilla::Plugin::BumpVersionFromGit>
 
 =head3 L<Dist::Zilla::Plugin::Catalyst>
-
-=head3 L<Dist::Zilla::Plugin::Catalyst::Helper>
 
 =head3 L<Dist::Zilla::Plugin::Catalyst::New>
 
@@ -78,13 +88,23 @@ in one go.
 
 =head3 L<Dist::Zilla::Plugin::CheckExtraTests>
 
+=head3 L<Dist::Zilla::Plugin::CheckPrereqsIndexed>
+
 =head3 L<Dist::Zilla::Plugin::CompileTests>
 
+=head3 L<Dist::Zilla::Plugin::Conflicts>
+
 =head3 L<Dist::Zilla::Plugin::ConsistentVersionTest>
+
+=head3 L<Dist::Zilla::Plugin::CopyFilesFromBuild>
+
+=head3 L<Dist::Zilla::Plugin::CopyMakefilePLFromBuild>
 
 =head3 L<Dist::Zilla::Plugin::CopyReadmeFromBuild>
 
 =head3 L<Dist::Zilla::Plugin::CopyTo>
+
+=head3 L<Dist::Zilla::Plugin::CPANChangesTests>
 
 =head3 L<Dist::Zilla::Plugin::CriticTests>
 
@@ -100,15 +120,31 @@ in one go.
 
 =head3 L<Dist::Zilla::Plugin::CSJEWELL::VersionGetter>
 
+=head3 L<Dist::Zilla::Plugin::CustomLicense>
+
+=head3 L<Dist::Zilla::Plugin::Deb::VersionFromChangelog>
+
 =head3 L<Dist::Zilla::Plugin::DistManifestTests>
 
+=head3 L<Dist::Zilla::Plugin::Doppelgaenger>
+
 =head3 L<Dist::Zilla::Plugin::DualBuilders>
+
+=head3 L<Dist::Zilla::Plugin::DualLife>
 
 =head3 L<Dist::Zilla::Plugin::DynamicManifest>
 
 =head3 L<Dist::Zilla::Plugin::EOLTests>
 
 =head3 L<Dist::Zilla::Plugin::FatPacker>
+
+=head3 L<Dist::Zilla::Plugin::FileKeywords>
+
+=head3 L<Dist::Zilla::Plugin::FileKeywords::Standard>
+
+=head3 L<Dist::Zilla::Plugin::FindDirByRegex>
+
+=head3 L<Dist::Zilla::Plugin::GatherFromManifest>
 
 =head3 L<Dist::Zilla::Plugin::Git>
 
@@ -118,15 +154,31 @@ in one go.
 
 =head3 L<Dist::Zilla::Plugin::Git::CommitBuild>
 
+=head3 L<Dist::Zilla::Plugin::Git::DescribeVersion>
+
 =head3 L<Dist::Zilla::Plugin::Git::Init>
+
+=head3 L<Dist::Zilla::Plugin::Git::NextVersion>
 
 =head3 L<Dist::Zilla::Plugin::Git::Push>
 
 =head3 L<Dist::Zilla::Plugin::Git::Tag>
 
+=head3 L<Dist::Zilla::Plugin::Git::Tag::ForRelease>
+
 =head3 L<Dist::Zilla::Plugin::GitFmtChanges>
 
+=head3 L<Dist::Zilla::Plugin::GitHub>
+
+=head3 L<Dist::Zilla::Plugin::GitHub::Create>
+
+=head3 L<Dist::Zilla::Plugin::GitHub::Meta>
+
+=head3 L<Dist::Zilla::Plugin::GitHub::Update>
+
 =head3 L<Dist::Zilla::Plugin::GithubMeta>
+
+=head3 L<Dist::Zilla::Plugin::GithubUpdate>
 
 =head3 L<Dist::Zilla::Plugin::GitObtain>
 
@@ -136,9 +188,35 @@ in one go.
 
 =head3 L<Dist::Zilla::Plugin::Homepage>
 
+=head3 L<Dist::Zilla::Plugin::Inject>
+
 =head3 L<Dist::Zilla::Plugin::InlineFilesMARCEL>
 
 =head3 L<Dist::Zilla::Plugin::InstallGuide>
+
+=head3 L<Dist::Zilla::Plugin::InstallRelease>
+
+=head3 L<Dist::Zilla::Plugin::JSAN>
+
+=head3 L<Dist::Zilla::Plugin::JSAN::Bundle>
+
+=head3 L<Dist::Zilla::Plugin::JSAN::GatherDir::Template>
+
+=head3 L<Dist::Zilla::Plugin::JSAN::GitHubDocs>
+
+=head3 L<Dist::Zilla::Plugin::JSAN::InstallInstructions>
+
+=head3 L<Dist::Zilla::Plugin::JSAN::Minter>
+
+=head3 L<Dist::Zilla::Plugin::JSAN::NPM>
+
+=head3 L<Dist::Zilla::Plugin::JSAN::NPM::Publish>
+
+=head3 L<Dist::Zilla::Plugin::JSAN::PkgVersion>
+
+=head3 L<Dist::Zilla::Plugin::JSAN::ReadmeFromMD>
+
+=head3 L<Dist::Zilla::Plugin::JSAN::StaticDir>
 
 =head3 L<Dist::Zilla::Plugin::KwaliteeTests>
 
@@ -160,11 +238,11 @@ in one go.
 
 =head3 L<Dist::Zilla::Plugin::Mercurial::Tag>
 
+=head3 L<Dist::Zilla::Plugin::Metadata>
+
 =head3 L<Dist::Zilla::Plugin::MetaData::BuiltWith>
 
 =head3 L<Dist::Zilla::Plugin::MetaData::BuiltWith::All>
-
-=head3 L<Dist::Zilla::Plugin::MetaNoIndex>
 
 =head3 L<Dist::Zilla::Plugin::MetaProvides>
 
@@ -174,7 +252,7 @@ in one go.
 
 =head3 L<Dist::Zilla::Plugin::MetaProvides::Package>
 
-=head3 L<Dist::Zilla::Plugin::MetaRecommends>
+=head3 L<Dist::Zilla::Plugin::MetaResourcesFromGit>
 
 =head3 L<Dist::Zilla::Plugin::MinimumPerl>
 
@@ -188,11 +266,19 @@ in one go.
 
 =head3 L<Dist::Zilla::Plugin::NoAutomatedTesting>
 
+=head3 L<Dist::Zilla::Plugin::NoSmartCommentsTests>
+
 =head3 L<Dist::Zilla::Plugin::NoTabsTests>
+
+=head3 L<Dist::Zilla::Plugin::OSPrereqs>
 
 =head3 L<Dist::Zilla::Plugin::OurPkgVersion>
 
 =head3 L<Dist::Zilla::Plugin::PerlTidy>
+
+=head3 L<Dist::Zilla::Plugin::PickyPodWeaver>
+
+=head3 L<Dist::Zilla::Plugin::PodLinkTests>
 
 =head3 L<Dist::Zilla::Plugin::PodLoom>
 
@@ -210,9 +296,13 @@ in one go.
 
 =head3 L<Dist::Zilla::Plugin::PurePerlTests>
 
+=head3 L<Dist::Zilla::Plugin::ReadmeAnyFromPod>
+
 =head3 L<Dist::Zilla::Plugin::ReadmeFromPod>
 
 =head3 L<Dist::Zilla::Plugin::ReadmeMarkdownFromPod>
+
+=head3 L<Dist::Zilla::Plugin::ReportPhase>
 
 =head3 L<Dist::Zilla::Plugin::ReportVersions>
 
@@ -220,11 +310,35 @@ in one go.
 
 =head3 L<Dist::Zilla::Plugin::Repository>
 
+=head3 L<Dist::Zilla::Plugin::RequiresExternal>
+
 =head3 L<Dist::Zilla::Plugin::Rsync>
+
+=head3 L<Dist::Zilla::Plugin::Run>
+
+=head3 L<Dist::Zilla::Plugin::Run::AfterBuild>
+
+=head3 L<Dist::Zilla::Plugin::Run::AfterRelease>
+
+=head3 L<Dist::Zilla::Plugin::Run::BeforeBuild>
+
+=head3 L<Dist::Zilla::Plugin::Run::BeforeRelease>
+
+=head3 L<Dist::Zilla::Plugin::Run::Release>
+
+=head3 L<Dist::Zilla::Plugin::Run::Role::Runner>
 
 =head3 L<Dist::Zilla::Plugin::Signature>
 
+=head3 L<Dist::Zilla::Plugin::StaticVersion>
+
 =head3 L<Dist::Zilla::Plugin::SubmittingPatches>
+
+=head3 L<Dist::Zilla::Plugin::Subversion>
+
+=head3 L<Dist::Zilla::Plugin::Subversion::ReleaseDist>
+
+=head3 L<Dist::Zilla::Plugin::Subversion::Tag>
 
 =head3 L<Dist::Zilla::Plugin::SurgicalPkgVersion>
 
@@ -258,41 +372,79 @@ in one go.
 
 =head3 L<Dist::Zilla::Plugin::VersionFromModule>
 
-=head3 L<Dist::Zilla::Plugin::VersionFromPrev>
+=head3 L<Dist::Zilla::Plugin::WSDL>
 
-=head3 L<Dist::Zilla::Plugin::VersionFromPrev::Finder::Git::LastVersion>
-
-=head3 L<Dist::Zilla::Plugin::VersionFromPrev::Style::Classic>
+=head3 L<Dist::Zilla::Plugin::WSDL::Types>
 
 =head2 Plugin bundles
+
+=head3 L<Dist::Zilla::PluginBundle::AJGB>
+
+=head3 L<Dist::Zilla::PluginBundle::Author::DOHERTY>
+
+=head3 L<Dist::Zilla::PluginBundle::Author::KENTNL>
+
+=head3 L<Dist::Zilla::PluginBundle::Author::KENTNL::Lite>
+
+=head3 L<Dist::Zilla::PluginBundle::Author::LESPEA>
+
+=head3 L<Dist::Zilla::PluginBundle::Author::OLIVER>
 
 =head3 L<Dist::Zilla::PluginBundle::AVAR>
 
 =head3 L<Dist::Zilla::PluginBundle::BINGOS>
 
+=head3 L<Dist::Zilla::PluginBundle::CEBJYRE>
+
 =head3 L<Dist::Zilla::PluginBundle::CJM>
 
 =head3 L<Dist::Zilla::PluginBundle::CSJEWELL>
 
+=head3 L<Dist::Zilla::PluginBundle::DAGOLDEN>
+
+=head3 L<Dist::Zilla::PluginBundle::DANIELP>
+
+=head3 L<Dist::Zilla::PluginBundle::DOY>
+
 =head3 L<Dist::Zilla::PluginBundle::FAYLAND>
 
+=head3 L<Dist::Zilla::PluginBundle::FLORA>
+
+=head3 L<Dist::Zilla::PluginBundle::GENEHACK>
+
+=head3 L<Dist::Zilla::PluginBundle::GETTY>
+
 =head3 L<Dist::Zilla::PluginBundle::Git>
+
+=head3 L<Dist::Zilla::PluginBundle::GitHub>
+
+=head3 L<Dist::Zilla::PluginBundle::GopherRepellent>
 
 =head3 L<Dist::Zilla::PluginBundle::IDOPEREL>
 
 =head3 L<Dist::Zilla::PluginBundle::JQUELIN>
 
-=head3 L<Dist::Zilla::PluginBundle::KENTNL>
-
-=head3 L<Dist::Zilla::PluginBundle::KENTNL::Lite>
+=head3 L<Dist::Zilla::PluginBundle::JROCKWAY>
 
 =head3 L<Dist::Zilla::PluginBundle::MARCEL>
 
 =head3 L<Dist::Zilla::PluginBundle::Mercurial>
 
+=head3 L<Dist::Zilla::PluginBundle::MSCHOUT>
+
+=head3 L<Dist::Zilla::PluginBundle::NIGELM>
+
+=head3 L<Dist::Zilla::PluginBundle::NUFFIN>
+
+=head3 L<Dist::Zilla::PluginBundle::PadrePlugin>
+
 =head3 L<Dist::Zilla::PluginBundle::PDONELAN>
 
 =head3 L<Dist::Zilla::PluginBundle::Rakudo>
+
+=head3 L<Dist::Zilla::PluginBundle::RBO>
+
+=head3 L<Dist::Zilla::PluginBundle::RBUELS>
 
 =head3 L<Dist::Zilla::PluginBundle::RJBS>
 
@@ -300,7 +452,15 @@ in one go.
 
 =head3 L<Dist::Zilla::PluginBundle::ROKR::Basic>
 
+=head3 L<Dist::Zilla::PluginBundle::RTHOMPSON>
+
 =head3 L<Dist::Zilla::PluginBundle::SVK>
+
+=head3 L<Dist::Zilla::PluginBundle::TestingMania>
+
+=head3 L<Dist::Zilla::PluginBundle::WOLVERIAN>
+
+=head3 L<Dist::Zilla::PluginBundle::YANICK>
 
 =head1 SEE ALSO
 
